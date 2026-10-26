@@ -1,0 +1,22 @@
+{
+  "name": "abishek-r-portfolio",
+  "version": "1.0.0",
+  "description": "ABISHEK R — Cinematic Personal Portfolio, Musician Identity & Jan Visual Production Studio",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "serve": "node server.js"
+  },
+  "keywords": [
+    "portfolio",
+    "video-editor",
+    "visual-designer",
+    "musician",
+    "keyboardist",
+    "drummer",
+    "jan-visual-production"
+  ],
+  "author": "ABISHEK R",
+  "license": "ISC"
+}

@@ -1,0 +1,1096 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ABISHEK R — Video Editor, Visual Designer & Musician | JAN VISUAL PRODUCTION</title>
+  <meta name="description"
+    content="Official portfolio of Abishek R, creative video editor, visual designer, keyboardist & drummer. Co-founder of Jan Visual Production house.">
+
+  <!-- Open Graph / Meta -->
+  <meta property="og:title" content="ABISHEK R — Video Editor, Visual Designer & Musician">
+  <meta property="og:description"
+    content="Turning raw ideas into visual & musical experiences. Video editing, keyboard, drums, poster design, brand identity & digital experiences.">
+  <meta property="og:type" content="website">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- CINEMATIC MOTION BACKGROUND ENGINE (Fixed Fullscreen Canvas & Ambient Shaders) -->
+  <div id="cinematicMotionBg" class="cinematic-motion-bg" aria-hidden="true">
+    <canvas id="motionBgCanvas" class="motion-bg-canvas"></canvas>
+    <div class="motion-bg-aurora aurora-1"></div>
+    <div class="motion-bg-aurora aurora-2"></div>
+    <div class="motion-bg-aurora aurora-3"></div>
+    <div class="motion-bg-vignette"></div>
+    <div class="motion-bg-noise"></div>
+  </div>
+
+  <!-- CUSTOM CURSOR -->
+  <div class="custom-cursor"></div>
+  <div class="custom-cursor-follower"></div>
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="preloader-brand">ABISHEK <span>R</span></div>
+    <div class="preloader-content">
+      <div class="preloader-title">LET'S ENTER INTO THE STUDIO</div>
+      <div class="preloader-counter">01%</div>
+    </div>
+    <div class="preloader-bar">
+      <div class="preloader-progress"></div>
+    </div>
+  </div>
+
+  <!-- FLOATING NAVIGATION (EXACTLY REORDERED AS REQUESTED) -->
+  <header class="header-nav">
+    <a href="#" class="header-brand">
+      ABISHEK R <span></span>
+    </a>
+    <ul class="nav-links">
+      <div class="nav-active-indicator"></div>
+      <li><a href="#editing" class="nav-link" data-section="editing">EDITING</a></li>
+      <li><a href="#music" class="nav-link" data-section="music">MUSIC</a></li>
+      <li><a href="#jan-studio" class="nav-link" data-section="jan-studio">JAN VISUAL PRODUCTION</a></li>
+      <li><a href="#work" class="nav-link" data-section="work">WORK</a></li>
+      <li><a href="#services" class="nav-link" data-section="services">SERVICES</a></li>
+      <li><a href="#contact" class="nav-link" data-section="contact">CONTACT</a></li>
+    </ul>
+    <a href="#contact" class="nav-cta">LET'S TALK →</a>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="hero-bg-media">
+        <!-- Base Photo -->
+        <img src="assets/images/Jas 1.png" alt="Abishek R Creative Studio" class="hero-photo-base">
+
+        <!-- Emerging Creative Elements System (Layered behind subject silhouette) -->
+        <div class="hero-creative-elements-system" id="heroCreativeSystem">
+          <!-- Canvas for subtle emergence motion trails & particles -->
+          <canvas id="heroParticlesCanvas" class="hero-particles-canvas"></canvas>
+
+          <!-- 6 Creative Transparent Illustrations (Equal Spacing & Zero Overlap HD System) -->
+          <!-- 1. CapCut (Top Left) -->
+          <div class="creative-element-card el-capcut depth-bg" data-element="capcut" data-depth="0.04"
+            title="CapCut Video Editing">
+            <div class="creative-element-inner">
+              <img src="assets/images/element_capcut.png" alt="CapCut Video Editing">
+            </div>
+          </div>
+
+          <!-- 2. Instagram (Mid Left) -->
+          <div class="creative-element-card el-instagram depth-fore" data-element="instagram" data-depth="0.05"
+            title="Instagram Creative Content">
+            <div class="creative-element-inner">
+              <img src="assets/images/element_instagram.png" alt="Instagram Content & Branding">
+            </div>
+          </div>
+
+          <!-- 3. Keyboard / Piano (Lower Left) -->
+          <div class="creative-element-card el-keyboard depth-fore" data-element="keyboard" data-depth="0.06"
+            title="Keyboard Synthesizer">
+            <div class="creative-element-inner">
+              <img src="assets/images/element_keyboard.png" alt="Keyboard Synthesizer & Music">
+            </div>
+          </div>
+
+          <!-- 4. Canva (Top Right) -->
+          <div class="creative-element-card el-canva depth-mid" data-element="canva" data-depth="0.04"
+            title="Canva Visual Design">
+            <div class="creative-element-inner">
+              <img src="assets/images/element_canva.png" alt="Canva Visual Design">
+            </div>
+          </div>
+
+          <!-- 5. Drums (Mid Right) -->
+          <div class="creative-element-card el-drums depth-mid" data-element="drums" data-depth="0.05"
+            title="Drum Kit & Percussion">
+            <div class="creative-element-inner">
+              <img src="assets/images/element_drums.png" alt="Drum Kit & Beats">
+            </div>
+          </div>
+
+          <!-- 6. Guitar (Lower Right) -->
+          <div class="creative-element-card el-guitar depth-bg" data-element="guitar" data-depth="0.06"
+            title="Electric Guitar">
+            <div class="creative-element-inner">
+              <img src="assets/images/element_guitar.png" alt="Electric Guitar Identity">
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-overlay-gradient"></div>
+      </div>
+
+      <div class="hero-content">
+        <h1 class="hero-title">
+          <span>ABISHEK R</span>
+        </h1>
+
+        <div class="hero-subtitle-row">
+          <div class="hero-subtitle">
+            VIDEO EDITOR / VISUAL DESIGNER / MUSICIAN — <span class="text-lime">I EDIT. I DESIGN. I PLAY.</span>
+          </div>
+          <a href="#intro" class="hero-scroll-indicator">
+            SCROLL TO EXPLORE <span>↓</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- INTRODUCTION / ABOUT SECTION (#about) -->
+    <section class="light-section about-redesign-section" id="about">
+      <!-- Layered Ambient Background Infrastructure -->
+      <div class="about-bg-grid" aria-hidden="true"></div>
+      <div class="about-bg-noise" aria-hidden="true"></div>
+      <div class="about-bg-watermark-wrapper" aria-hidden="true">
+        <div class="about-bg-watermark watermark-primary">ABISHEK R</div>
+        <div class="about-bg-watermark watermark-secondary">VISUAL CREATIVE</div>
+      </div>
+      <div class="about-bg-glow-point glow-1"></div>
+      <div class="about-bg-glow-point glow-2"></div>
+
+      <!-- Floating Micro Graphic Elements -->
+      <div class="about-floating-element tech-coord-1" aria-hidden="true">SYS_VER // 2026.04</div>
+      <div class="about-floating-element tech-coord-2" aria-hidden="true">X: 024.99 // Y: 128.40</div>
+      <div class="about-floating-element frame-corner top-left" aria-hidden="true">┌ 01</div>
+      <div class="about-floating-element frame-corner top-right" aria-hidden="true">02 ┐</div>
+
+      <div class="about-container">
+
+        <!-- ABOUT HEADER META -->
+        <div class="about-header-meta">
+          <span class="about-meta-dot">●</span>
+          <span class="section-label-inline">ABOUT ABISHEK</span>
+          <span class="meta-sub-tag">// CREATIVE DIRECTOR & EDITOR</span>
+        </div>
+
+        <div class="about-main-grid">
+          <!-- LEFT COLUMN: Headline -->
+          <div class="about-left-col">
+            <h2 class="about-headline">
+              <div class="headline-mask-line"><span class="headline-inner">I TURN RAW</span></div>
+              <div class="headline-mask-line"><span class="headline-inner">IDEAS INTO</span></div>
+              <div class="headline-mask-line highlight-container">
+                <span class="headline-inner highlight-word">VISUAL</span>
+                <div class="lime-animated-underline"></div>
+              </div>
+              <div class="headline-mask-line"><span class="headline-inner">EXPERIENCES.</span></div>
+            </h2>
+
+            <!-- Editorial Accent Badge -->
+            <div class="headline-editorial-tag">
+              <span class="tag-accent">01/04</span>
+              <span>VIDEO • MUSIC • DESIGN • STUDIO</span>
+            </div>
+          </div>
+
+          <!-- RIGHT COLUMN: Lead text + 2x2 discipline cards -->
+          <div class="about-right-col">
+            <div class="about-lead-wrapper">
+              <div class="lead-vertical-line"></div>
+              <p class="about-lead-text">
+                "I’m Abishek R, a creative editor, visual designer and musician focused on turning ordinary footage,
+                images, sound and ideas into engaging digital experiences that capture attention and hold it."
+              </p>
+            </div>
+
+            <div class="about-disciplines-grid">
+              <!-- CARD 01: EDITING -->
+              <div class="about-discipline-card card-editing" data-cursor="VIEW">
+                <div class="card-light-sweep"></div>
+                <div class="card-top-bar">
+                  <span class="card-num-label">01 // EDITING</span>
+                  <span class="card-tech-code">TIMELINE.CC</span>
+                </div>
+
+                <h3 class="card-discipline-title">EDITING</h3>
+                <p class="card-discipline-desc">Cinematic edits, fast cuts & retention reels.</p>
+
+                <div class="card-footer-meta">
+                  <span class="meta-tag-pill">CAPCUT PRO</span>
+                  <span class="meta-tag-pill">SPEED CURVE</span>
+                </div>
+
+                <div class="discipline-icon-wrapper">
+                  <img src="assets/images/about_editing.png" alt="Video Editing Icon" class="discipline-png-icon">
+                </div>
+              </div>
+
+              <!-- CARD 02: MUSIC -->
+              <div class="about-discipline-card card-music" data-cursor="VIEW">
+                <div class="card-light-sweep"></div>
+                <div class="card-top-bar">
+                  <span class="card-num-label">02 // MUSIC</span>
+                  <span class="card-tech-code">AUDIO_JAM</span>
+                </div>
+
+                <h3 class="card-discipline-title">MUSIC</h3>
+                <p class="card-discipline-desc">Keyboard melody, rhythm & drum performance.</p>
+
+                <div class="card-footer-meta">
+                  <span class="meta-tag-pill">KEYBOARD</span>
+                  <span class="meta-tag-pill">PERCUSSION</span>
+                </div>
+
+                <div class="discipline-icon-wrapper">
+                  <img src="assets/images/about_music.png" alt="Music Icon" class="discipline-png-icon">
+                </div>
+              </div>
+
+              <!-- CARD 03: STUDIO -->
+              <div class="about-discipline-card card-studio" data-cursor="VIEW">
+                <div class="card-light-sweep"></div>
+                <div class="card-top-bar">
+                  <span class="card-num-label">03 // STUDIO</span>
+                  <span class="card-tech-code">JAN_STUDIO®</span>
+                </div>
+
+                <h3 class="card-discipline-title">STUDIO</h3>
+                <p class="card-discipline-desc">JAN Visual Production collaborative house.</p>
+
+                <div class="card-footer-meta">
+                  <span class="meta-tag-pill">CREATIVE HOUSE</span>
+                </div>
+
+                <div class="discipline-icon-wrapper">
+                  <img src="assets/images/about_studio.png" alt="Studio Icon" class="discipline-png-icon">
+                </div>
+              </div>
+
+              <!-- CARD 04: DESIGN -->
+              <div class="about-discipline-card card-design" data-cursor="VIEW">
+                <div class="card-light-sweep"></div>
+                <div class="card-top-bar">
+                  <span class="card-num-label">04 // DESIGN</span>
+                  <span class="card-tech-code">VECTOR_GRID</span>
+                </div>
+
+                <h3 class="card-discipline-title">DESIGN</h3>
+                <p class="card-discipline-desc">High-impact posters, minimal logos & digital design.</p>
+
+                <div class="card-footer-meta">
+                  <span class="meta-tag-pill">POSTERS & LOGOS</span>
+                </div>
+
+                <div class="discipline-icon-wrapper">
+                  <img src="assets/images/about_design.png" alt="Design Icon" class="discipline-png-icon">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SIGNATURE STATEMENT (PARALLAX) -->
+    <section class="signature-section">
+      <div class="section-label">CREATIVE PHILOSOPHY</div>
+      <div class="signature-statement">
+        <span class="signature-word">IT'S</span>
+        <span class="signature-word">NOT</span>
+        <span class="signature-word">JUST</span>
+        <span class="signature-word">ABOUT</span>
+        <span class="signature-word highlight">EDITING.</span>
+        <br>
+        <span class="signature-word">IT'S</span>
+        <span class="signature-word">ABOUT</span>
+        <span class="signature-word">HOW</span>
+        <span class="signature-word">THE</span>
+        <span class="signature-word">STORY</span>
+        <span class="signature-word highlight">FEELS.</span>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         1. EDITING SECTION (#editing)
+         ==================================================================== -->
+    <section class="editing-master-container" id="editing">
+      <!-- ON TIMELINE VS OFF TIMELINE SPLIT SHOWCASE -->
+      <div class="split-showcase-section" style="padding-top: 4rem;">
+        <div class="split-header">
+          <div class="section-label">01 — EDITING & VISUAL CREATION</div>
+          <h2 style="font-size: clamp(2.2rem, 5vw, 4rem);">WORK ON & OFF THE TIMELINE</h2>
+        </div>
+
+        <div class="split-container">
+          <div class="split-side on-timeline" data-cursor="EXPLORE">
+            <div>
+              <span class="split-side-tag">01 — VIDEO EDITING</span>
+              <h3 class="split-side-title">ON TIMELINE</h3>
+              <p style="margin-top: 1rem; color: #C0D0A0;">Where timing, momentum, rhythm and sound synchronize to build
+                attention.</p>
+            </div>
+            <ul class="split-tags-list">
+              <li class="split-tag-item">Reels & Shorts</li>
+              <li class="split-tag-item">Cinematic Edits</li>
+              <li class="split-tag-item">Promotional Videos</li>
+              <li class="split-tag-item">YouTube Edits</li>
+              <li class="split-tag-item">Social Cuts</li>
+            </ul>
+            <a href="#video-showcase" class="split-btn-action">VIEW TIMELINE EDITS →</a>
+          </div>
+
+          <div class="split-side off-timeline" data-cursor="EXPLORE">
+            <div>
+              <span class="split-side-tag">02 — VISUAL & BRAND DESIGN</span>
+              <h3 class="split-side-title">OFF TIMELINE</h3>
+              <p style="margin-top: 1rem; color: var(--text-dark-secondary);">Where static frames, typography, branding
+                and layout tell static stories.</p>
+            </div>
+            <ul class="split-tags-list">
+              <li class="split-tag-item">Poster Design</li>
+              <li class="split-tag-item">Logo Identity</li>
+              <li class="split-tag-item">Photo Retouching</li>
+              <li class="split-tag-item">Web Design</li>
+              <li class="split-tag-item">Social Creatives</li>
+            </ul>
+            <a href="#work" class="split-btn-action">VIEW VISUAL DESIGNS →</a>
+          </div>
+        </div>
+      </div>
+
+
+
+      <!-- CAPCUT TOOL SHOWCASE -->
+      <div class="capcut-section">
+        <div class="capcut-container">
+          <div>
+            <div class="section-label">MY TOOL OF CHOICE</div>
+            <h2 class="capcut-title">CAPCUT</h2>
+            <p class="capcut-description">
+              "Fast ideas need fast execution. CapCut is where I turn concepts into finished visuals — leveraging
+              keyframes, velocity curves, text animations, and color adjustments at record speed."
+            </p>
+            <div style="display: flex; gap: 1.5rem; flex-wrap: wrap;">
+              <div style="border-left: 2px solid var(--accent-lime); padding-left: 1rem;">
+                <strong style="font-size: 1.5rem; display:block; color:#FFF;">FAST CUTS</strong>
+                <span style="font-size: 0.85rem; color:var(--text-dark-muted);">Kinetic timeline workflow</span>
+              </div>
+              <div style="border-left: 2px solid var(--accent-lime); padding-left: 1rem;">
+                <strong style="font-size: 1.5rem; display:block; color:#FFF;">HIGH RETENTION</strong>
+                <span style="font-size: 0.85rem; color:var(--text-dark-muted);">Engaging text & sound effects</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="timeline-widget">
+            <div class="timeline-header">
+              <span
+                style="font-family:var(--font-heading); font-weight:700; font-size:0.85rem; color:var(--accent-lime);">ABISHEK_R_TIMELINE.CC</span>
+              <div class="timeline-controls">
+                <button class="timeline-btn active-play" title="Toggle Playhead">❚❚</button>
+              </div>
+            </div>
+            <div class="timeline-tracks">
+              <div class="timeline-playhead"></div>
+              <div class="timeline-track">
+                <span class="track-label">VIDEO 1</span>
+                <div class="track-clip clip-video">CINEMATIC_REEL_01.MP4</div>
+              </div>
+              <div class="timeline-track">
+                <span class="track-label">AUDIO 1</span>
+                <div class="track-clip clip-audio">BEAT_SYNC_BASS_BOOST.WAV</div>
+              </div>
+              <div class="timeline-track">
+                <span class="track-label">TEXT</span>
+                <div class="track-clip clip-effect">KINETIC_TYPO_ANIMATION</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHOTO EDITING SECTION ("FRAME BY FRAME") -->
+      <div class="photo-section" id="photo-editing">
+        <div style="text-align: center; max-width: 800px; margin: 0 auto;">
+          <div class="section-label">PHOTO EDITING & COLOR GRADING</div>
+          <h2 style="font-size: clamp(3rem, 7vw, 6rem);">FRAME BY FRAME</h2>
+          <p style="font-size: 1.2rem; margin-top: 1rem;">Drag the handle left or right to inspect the raw un-edited
+            image versus the final retouched & color-graded result.</p>
+        </div>
+
+        <div class="before-after-container" data-cursor="DRAG SLIDER">
+          <img src="assets/images/photo_after.jpg" alt="After Photo Edit" class="before-after-img">
+          <div class="before-after-overlay">
+            <img src="assets/images/photo_before.jpg" alt="Before Photo Edit">
+          </div>
+          <div class="before-after-handle">
+            <div class="handle-circle">↔</div>
+          </div>
+          <span class="ba-badge before">BEFORE (RAW)</span>
+          <span class="ba-badge after">AFTER (GRADE & RETOUCH)</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         2. MUSIC SECTION (#music)
+         ==================================================================== -->
+    <section class="music-section" id="music">
+      <div class="music-hero-box">
+        <div class="section-label">02 — MULTIDISCIPLINARY CREATIVE IDENTITY</div>
+        <h2 style="font-size: clamp(2rem, 5vw, 4rem); margin-top: 1rem;">I DON'T JUST EDIT THE RHYTHM.</h2>
+        <h1 class="music-headline">I PLAY IT.</h1>
+        <p class="music-sub-role">ABISHEK R — KEYBOARDIST • DRUMMER</p>
+      </div>
+
+      <div
+        style="width: 100%; aspect-ratio: 21/9; border-radius: 24px; overflow: hidden; border: 1px solid var(--border-dark); margin-bottom: 6rem; position: relative;">
+        <img src="assets/images/Jas 3.png" alt="Abishek R Keyboard Performance"
+          style="width:100%; height:100%; object-fit:cover;">
+        <div class="hero-overlay-gradient"></div>
+        <div style="position: absolute; bottom: 2rem; left: 2rem; z-index: 10;">
+          <span class="hero-badge highlight">SYNTH & KEYBOARD PERFORMANCE</span>
+          <span class="hero-badge">LIVE STAGE JAM</span>
+        </div>
+      </div>
+
+      <div class="intro-grid" style="align-items: center; margin-bottom: 6rem;">
+        <div>
+          <div class="section-label">MUSIC INTRO</div>
+          <h2 style="font-size: clamp(2.5rem, 5vw, 4.5rem); margin-bottom: 1.5rem;">ANOTHER WAY I CREATE</h2>
+          <p style="font-size: 1.25rem; line-height: 1.7; color: var(--text-dark-secondary);">
+            "Before a frame becomes a story, there is rhythm. Music has always been another way for me to create,
+            express and connect. Playing keyboard and drums gives me an instinctive feel for pacing, timing, and dynamic
+            contrast."
+          </p>
+        </div>
+        <div style="border-left: 2px solid var(--accent-lime); padding-left: 2rem;">
+          <h3 style="font-size: 1.8rem; margin-bottom: 0.5rem; color:#FFF;">VISUALS + MUSIC</h3>
+          <p>Two distinct creative worlds powered by the exact same creative energy.</p>
+        </div>
+      </div>
+
+      <!-- Keyboard Section -->
+      <div style="margin-bottom: 6rem;">
+        <div class="section-label">PRIMARY INSTRUMENT 01</div>
+        <h2 style="font-size: clamp(3rem, 7vw, 6rem);">KEYBOARD</h2>
+        <p
+          style="font-family: var(--font-heading); font-size: clamp(1.2rem, 3vw, 2rem); font-weight: 700; color: var(--accent-lime); margin-bottom: 2rem;">
+          MELODY. HARMONY. EXPRESSION.
+        </p>
+
+        <div class="asymmetric-grid">
+          <div class="project-card span-8 wide" data-project-id="music-01" data-cursor="LISTEN">
+            <div class="project-img-wrapper">
+              <img src="assets/images/Jas 2.png" alt="Keyboard Synthesizer Performance">
+            </div>
+            <div class="project-card-meta">
+              <div>
+                <div class="project-num">01</div>
+                <h3 class="project-name">KEYBOARD SYNTHESIZER SESSION</h3>
+              </div>
+              <div class="project-category">MELODIC SESSION / 2026</div>
+            </div>
+          </div>
+          <div class="project-card span-4 tall"
+            style="background:#111114; display:flex; flex-direction:column; justify-content:center; padding:2.5rem;">
+            <div class="section-label">KEYBOARD SPECS</div>
+            <h3 style="font-size:1.8rem; margin-bottom:1rem;">SYNTH & PIANO</h3>
+            <p>Crafting chord progressions, synth textures, and ambient soundscapes that elevate visual storytelling.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Drums Section -->
+      <div style="margin-bottom: 6rem;">
+        <div class="section-label">PRIMARY INSTRUMENT 02</div>
+        <h2 style="font-size: clamp(3rem, 7vw, 6rem);">DRUMS</h2>
+        <p
+          style="font-family: var(--font-heading); font-size: clamp(1.2rem, 3vw, 2rem); font-weight: 700; color: var(--accent-lime); margin-bottom: 2rem;">
+          RHYTHM IS EVERYTHING.
+        </p>
+
+        <div class="asymmetric-grid">
+          <div class="project-card span-4 tall"
+            style="background:#111114; display:flex; flex-direction:column; justify-content:center; padding:2.5rem;">
+            <div class="section-label">PERCUSSION DRIVES THE EDIT</div>
+            <h3 style="font-size:1.8rem; margin-bottom:1rem;">RAW VELOCITY</h3>
+            <p>Drumming teaches keyframe accuracy, beat placement, and high retention tempo transitions.</p>
+          </div>
+          <div class="project-card span-8 wide" data-project-id="music-02" data-cursor="WATCH">
+            <div class="project-img-wrapper">
+              <img src="assets/images/Jas 5.png" alt="Live Drums Performance">
+            </div>
+            <div class="project-card-meta">
+              <div>
+                <div class="project-num">02</div>
+                <h3 class="project-name">LIVE DRUMS PERFORMANCE</h3>
+              </div>
+              <div class="project-category">PERCUSSION SESSION / 2026</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Visual + Music Connection -->
+      <div
+        style="background: #0E0E12; border: 1px solid var(--border-dark); border-radius: 24px; padding: 4rem 3vw; text-align: center; margin-bottom: 6rem;">
+        <div class="section-label">RHYTHMIC SYNTHESIS</div>
+        <h2 style="font-size: clamp(2.5rem, 6vw, 5rem); margin-bottom: 1rem;">WHERE VISUALS MEET SOUND</h2>
+        <p
+          style="font-family: var(--font-heading); font-size: clamp(1.2rem, 3vw, 2rem); font-weight: 700; color: var(--accent-lime); margin-bottom: 1.5rem;">
+          I SEE RHYTHM. I HEAR MOTION.
+        </p>
+        <p style="font-size: 1.25rem; max-width: 800px; margin: 0 auto 3rem auto; line-height: 1.7;">
+          "Music has shaped the way I understand timing, rhythm and emotion. I bring that same sense of rhythm into my
+          video edits, transitions and visual storytelling."
+        </p>
+
+        <div class="visual-sound-mapping">
+          <div class="mapping-node">
+            <div class="mapping-beat">AUDIO BEAT</div>
+            <div class="mapping-arrow">↓</div>
+            <div class="mapping-outcome">JUMP CUT</div>
+          </div>
+          <div class="mapping-node">
+            <div class="mapping-beat">AUDIO CADENCE</div>
+            <div class="mapping-arrow">↓</div>
+            <div class="mapping-outcome">TRANSITION</div>
+          </div>
+          <div class="mapping-node">
+            <div class="mapping-beat">PERCUSSION HIT</div>
+            <div class="mapping-arrow">↓</div>
+            <div class="mapping-outcome">MOTION EFFECT</div>
+          </div>
+          <div class="mapping-node">
+            <div class="mapping-beat">HARMONIC RISE</div>
+            <div class="mapping-arrow">↓</div>
+            <div class="mapping-outcome">VISUAL IMPACT</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Audio Player -->
+      <div style="text-align: center; margin-bottom: 6rem;">
+        <div class="section-label">MUSIC SHOWCASE</div>
+        <h2 style="font-size: clamp(2.5rem, 5vw, 4.5rem);">LISTEN / WATCH</h2>
+
+        <div class="audio-player-box">
+          <button class="audio-play-toggle" id="audioPlayToggle" title="Play Sound Impression">▶</button>
+          <div class="audio-info">
+            <div class="audio-title">ABISHEK R — KEYBOARD & DRUM IMPRESSION</div>
+            <canvas id="audioWaveformCanvas" class="audio-waveform-canvas"></canvas>
+          </div>
+          <div
+            style="font-family: var(--font-heading); font-size: 0.85rem; color: var(--accent-lime); font-weight: 700;">
+            00:00 — 03:24
+          </div>
+        </div>
+      </div>
+
+      <!-- Music + Personality -->
+      <div style="text-align: center; margin-top: 6rem;">
+        <div
+          style="font-size: clamp(2.5rem, 7vw, 6rem); font-family: var(--font-display); font-weight: 800; letter-spacing: -2px; margin-bottom: 1.5rem;">
+          EDIT • DESIGN • PLAY • CREATE
+        </div>
+        <h2 style="font-size: clamp(2rem, 4.5vw, 3.8rem); line-height: 0.95;">
+          ONE CREATIVE MIND.<br><span class="text-lime">MULTIPLE WAYS TO EXPRESS IT.</span>
+        </h2>
+        <div style="display: flex; justify-content: center; gap: 1.5rem; flex-wrap: wrap; margin-top: 2rem;">
+          <span class="hero-badge highlight">VIDEO EDITOR</span>
+          <span class="hero-badge highlight">VISUAL DESIGNER</span>
+          <span class="hero-badge">KEYBOARDIST</span>
+          <span class="hero-badge">DRUMMER</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         3. JAN VISUAL PRODUCTION STUDIO SECTION (#jan-studio)
+         ==================================================================== -->
+    <section class="jan-studio-section" id="jan-studio">
+      <div class="jan-hero-box">
+        <div class="section-label">03 — INDEPENDENT CREATIVE PRODUCTION HOUSE</div>
+        <h2 style="font-size: clamp(1.5rem, 3.5vw, 2.5rem); margin-top: 1rem;">MORE THAN A CREATIVE STUDIO.</h2>
+        <h1 class="jan-brand-display">
+          JAN VISUAL<br><span class="text-lime">PRODUCTION®</span>
+        </h1>
+        <p class="jan-tagline">WE CREATE. WE EDIT. WE PRODUCE.</p>
+        <p class="jan-description">
+          "JAN VISUAL PRODUCTION is an independent creative production venture founded by Abishek R and Jannanisri. We
+          bring ideas to life through video editing, photography, graphic design, branding and digital experiences."
+        </p>
+      </div>
+
+      <!-- Cinematic JAN VISUAL PRODUCTION Brand Identity Showcase -->
+      <div class="jan-logo-showcase" id="janLogoShowcase">
+        <!-- Soft Ambient Studio Light Bloom -->
+        <div class="jan-logo-ambient-glow"></div>
+
+        <!-- Subtle Technical Framing & HUD Detail -->
+        <div class="jan-logo-hud-frame">
+          <div class="hud-corner hud-tl"></div>
+          <div class="hud-corner hud-tr"></div>
+          <div class="hud-corner hud-bl"></div>
+          <div class="hud-corner hud-br"></div>
+          <div class="hud-tag top-left">EST. 2026 // CREATIVE STUDIO</div>
+          <div class="hud-tag top-right"><span class="rec-dot"></span> 4K ULTRA HD</div>
+          <div class="hud-tag bottom-left">JAN VISUAL PRODUCTION®</div>
+          <div class="hud-tag bottom-right">03 / 06</div>
+          <div class="hud-line-accent"></div>
+        </div>
+
+        <!-- Main Background-Free HD Brand Logo -->
+        <div class="jan-logo-wrapper" id="janLogoWrapper">
+          <img src="assets/images/jan_logo_transparent.png" alt="Jan Visual Production Official Logo"
+            class="jan-main-logo-img">
+          <div class="jan-logo-light-sweep"></div>
+        </div>
+      </div>
+
+      <div style="margin-top: 6rem;">
+        <div class="section-label">THE FOUNDERS</div>
+        <h2 style="font-size: clamp(2.2rem, 5vw, 4rem);">TWO MINDS. ONE CREATIVE VISION.</h2>
+
+        <div class="founders-grid">
+          <div class="founder-card">
+            <div class="founder-img-box">
+              <img src="assets/images/Jas 6.png" alt="Abishek R Founder">
+            </div>
+            <div class="founder-info">
+              <span class="founder-role-tag">FOUNDER 01</span>
+              <h3 class="founder-name">ABISHEK R</h3>
+              <p style="font-size: 0.95rem; margin-bottom: 1rem; color:var(--text-dark-secondary);">Video Editor | Photo
+                Editor | Visual Designer | Musician</p>
+              <ul class="founder-specialties">
+                <li class="founder-spec-item">Video Editing</li>
+                <li class="founder-spec-item">Photo Editing</li>
+                <li class="founder-spec-item">Poster Design</li>
+                <li class="founder-spec-item">Logo Design</li>
+                <li class="founder-spec-item">Website Design</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="founder-card">
+            <div class="founder-img-box">
+              <img src="assets/images/Jaan 1.jpeg" alt="Jannanisri Founder">
+            </div>
+            <div class="founder-info">
+              <span class="founder-role-tag">FOUNDER 02</span>
+              <h3 class="founder-name">JANNANISRI</h3>
+              <p style="font-size: 0.95rem; margin-bottom: 1rem; color:var(--text-dark-secondary);">Creative Partner |
+                Co-Founder | Model</p>
+              <ul class="founder-specialties">
+                <li class="founder-spec-item">Creative Strategy</li>
+                <li class="founder-spec-item">Production Operations</li>
+                <li class="founder-spec-item">Client Direction</li>
+                <li class="founder-spec-item">Modeling</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div style="text-align: center; max-width: 1000px; margin: 8rem auto 4rem auto;">
+        <div class="section-label">OUR CREATIVE PHILOSOPHY</div>
+        <h2 style="font-size: clamp(2.2rem, 4.5vw, 4.5rem); margin-bottom: 1.5rem; line-height: 1;">
+          EVERY FRAME HAS A PURPOSE.<br><span class="text-lime">EVERY DESIGN TELLS A STORY.</span>
+        </h2>
+        <p style="font-size: 1.25rem; line-height: 1.7; color: var(--text-dark-secondary);">
+          "We believe great visuals do more than look good. They communicate ideas, build identities and create lasting
+          impressions. Our goal is to transform creative concepts into visuals that connect with people."
+        </p>
+      </div>
+
+      <div
+        style="background: var(--bg-dark-card); border: 1px solid var(--border-dark); border-radius: 24px; padding: 4rem 3rem; text-align: center; margin-top: 4rem;">
+        <h2 style="font-size: clamp(2.5rem, 5vw, 4.5rem); margin-bottom: 1rem;">HAVE A PROJECT IN MIND?</h2>
+        <p style="font-size: 1.2rem; max-width: 650px; margin: 0 auto 2.5rem auto;">
+          "Let's turn your ideas into something unforgettable. Work with JAN VISUAL PRODUCTION and bring your next
+          creative project to life."
+        </p>
+        <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+          <a href="#contact" class="form-submit-btn" style="text-decoration:none;">START A PROJECT →</a>
+          <a href="#work" class="split-btn-action">VIEW OUR WORK</a>
+        </div>
+      </div>
+
+      <div style="text-align: center; margin-top: 6rem;">
+        <h2 style="font-size: clamp(2rem, 4.5vw, 3.8rem); line-height: 0.95;">
+          WE DON'T JUST CREATE VISUALS.<br><span class="text-lime">WE CREATE IMPRESSIONS.</span>
+        </h2>
+        <p
+          style="font-family: var(--font-heading); font-size: 0.9rem; letter-spacing: 2px; color: var(--text-dark-muted); margin-top: 1.5rem;">
+          JAN VISUAL PRODUCTION — FOUNDED BY ABISHEK R & JANNANISRI
+        </p>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         4. WORK SECTION (#work)
+         ==================================================================== -->
+    <section class="gallery-section" id="work">
+      <div class="section-label">04 — FEATURED PORTFOLIO</div>
+      <h2 style="font-size: clamp(2.5rem, 6vw, 4.5rem); margin-bottom: 1rem;">SELECTED WORK</h2>
+      <p style="font-size: 1.15rem; color: var(--text-dark-secondary); max-width: 720px; margin-bottom: 2.5rem;">
+        Explore selected creative productions, poster designs, branding identities and visual edits.
+      </p>
+
+      <div class="gallery-filter-bar">
+        <button class="filter-btn active" data-filter="all">ALL PROJECTS</button>
+        <button class="filter-btn" data-filter="poster">POSTER DESIGN</button>
+        <button class="filter-btn" data-filter="logo">LOGO DESIGN</button>
+        <button class="filter-btn" data-filter="photo">PHOTO EDITING</button>
+      </div>
+
+      <!-- SECONDARY GRID FOR OTHER CATEGORIES (POSTER, LOGO, PHOTO) -->
+      <div class="secondary-work-grid" id="secondaryWorkGrid"
+        style="display: flex; flex-wrap: wrap; gap: 2rem; margin-top: 3rem;">
+        <!-- Poster Design -->
+        <div class="project-card span-6" data-category="poster" data-project-id="01" data-cursor="VIEW CASE"
+          style="flex: 1 1 300px;">
+          <div class="project-img-wrapper">
+            <img src="assets/images/poster_f1.jpg" alt="F1 Motorsport Poster Design">
+          </div>
+          <div class="project-card-meta">
+            <div>
+              <div class="project-num">09 // POSTER DESIGN</div>
+              <h3 class="project-name">F1 SPEED & VELOCITY POSTER</h3>
+            </div>
+            <div class="project-category">POSTER DESIGN / 2026</div>
+          </div>
+        </div>
+
+        <!-- Logo Design -->
+        <div class="project-card span-6" data-category="logo" data-project-id="03" data-cursor="VIEW CASE"
+          style="flex: 1 1 300px;">
+          <div class="project-img-wrapper">
+            <img src="assets/images/jan_logo.jpg" alt="Jan Visual Production Branding">
+          </div>
+          <div class="project-card-meta">
+            <div>
+              <div class="project-num">10 // LOGO DESIGN</div>
+              <h3 class="project-name">JAN VISUAL PRODUCTION IDENTITY</h3>
+            </div>
+            <div class="project-category">LOGO DESIGN / 2026</div>
+          </div>
+        </div>
+
+        <!-- Photo Editing -->
+        <div class="project-card span-6" data-category="photo" data-project-id="02" data-cursor="VIEW CASE"
+          style="flex: 1 1 300px;">
+          <div class="project-img-wrapper">
+            <img src="assets/images/photo_after.jpg" alt="Editorial Portrait Color Grade">
+          </div>
+          <div class="project-card-meta">
+            <div>
+              <div class="project-num">11 // PHOTO EDITING</div>
+              <h3 class="project-name">EDITORIAL COLOR GRADE & RETOUCH</h3>
+            </div>
+            <div class="project-category">PHOTO EDITING / 2026</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         5. SERVICES SECTION (#services)
+         ==================================================================== -->
+    <section class="services-section" id="services">
+      <div class="section-label">05 — SERVICES</div>
+      <h2 style="font-size: clamp(2.5rem, 6vw, 4.5rem);">WHAT I CREATE</h2>
+
+      <div class="services-list">
+        <div class="service-item">
+          <span class="service-num">01</span>
+          <h3 class="service-name">VIDEO EDITING</h3>
+          <p class="service-desc">Reels, shorts, cinematic videos, social content and promotional edits crafted for high
+            viewer retention.</p>
+        </div>
+
+        <div class="service-item">
+          <span class="service-num">02</span>
+          <h3 class="service-name">PHOTO EDITING</h3>
+          <p class="service-desc">Color grading, skin retouching, image manipulation and creative digital compositions.
+          </p>
+        </div>
+
+        <div class="service-item">
+          <span class="service-num">03</span>
+          <h3 class="service-name">POSTER DESIGN</h3>
+          <p class="service-desc">Event posters, promotional creatives, motorsport graphics and social media artwork.
+          </p>
+        </div>
+
+        <div class="service-item">
+          <span class="service-num">04</span>
+          <h3 class="service-name">LOGO DESIGN</h3>
+          <p class="service-desc">Minimal, iconic and memorable visual brand identities designed to stand out.</p>
+        </div>
+
+        <div class="service-item">
+          <span class="service-num">05</span>
+          <h3 class="service-name">WEBSITE DESIGN</h3>
+          <p class="service-desc">Modern, responsive, cinematic and visually engaging personal & brand websites.</p>
+        </div>
+
+        <div class="service-item">
+          <span class="service-num">06</span>
+          <h3 class="service-name">SOCIAL MEDIA DESIGN</h3>
+          <p class="service-desc">Complete visual content systems designed for digital platforms and modern creators.
+          </p>
+        </div>
+      </div>
+
+      <!-- WORKFLOW PROCESS -->
+      <div style="margin-top: 6rem; padding-top: 4rem; border-top: 1px solid var(--border-light);">
+        <div class="section-label">WORKFLOW</div>
+        <h2 style="font-size: clamp(2.2rem, 5vw, 4rem);">FROM IDEA TO FINAL CUT</h2>
+
+        <div class="process-steps">
+          <div class="process-card" style="background: #FFF; border-color: var(--border-light);">
+            <div class="process-step-num" style="color: #000;">01</div>
+            <div class="process-step-title" style="color: #000;">IDEA</div>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--text-light-secondary);">Concept framing &
+              direction.</p>
+          </div>
+          <div class="process-card" style="background: #FFF; border-color: var(--border-light);">
+            <div class="process-step-num" style="color: #000;">02</div>
+            <div class="process-step-title" style="color: #000;">COLLECT</div>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--text-light-secondary);">Gathering footage &
+              assets.</p>
+          </div>
+          <div class="process-card" style="background: #FFF; border-color: var(--border-light);">
+            <div class="process-step-num" style="color: #000;">03</div>
+            <div class="process-step-title" style="color: #000;">EDIT</div>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--text-light-secondary);">Assembly, cuts &
+              pacing.</p>
+          </div>
+          <div class="process-card" style="background: #FFF; border-color: var(--border-light);">
+            <div class="process-step-num" style="color: #000;">04</div>
+            <div class="process-step-title" style="color: #000;">DESIGN</div>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--text-light-secondary);">Color grade &
+              typography.</p>
+          </div>
+          <div class="process-card" style="background: #FFF; border-color: var(--border-light);">
+            <div class="process-step-num" style="color: #000;">05</div>
+            <div class="process-step-title" style="color: #000;">REFINE</div>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--text-light-secondary);">Audio sync &
+              polishing.</p>
+          </div>
+          <div class="process-card" style="background: #FFF; border-color: var(--border-light);">
+            <div class="process-step-num" style="color: #000;">06</div>
+            <div class="process-step-title" style="color: #000;">DELIVER</div>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem; color: var(--text-light-secondary);">Final master render.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- ABOUT ME ("BEHIND THE EDIT") -->
+      <div id="about" style="margin-top: 6rem; padding-top: 4rem; border-top: 1px solid var(--border-light);">
+        <div class="section-label">BEHIND THE EDIT</div>
+        <div class="behind-edit-container">
+          <div class="behind-edit-text">
+            <h2 style="font-size: clamp(2.5rem, 5vw, 4.5rem); margin-bottom: 1.5rem;">ABISHEK R</h2>
+            <p style="font-size: 1.2rem; line-height: 1.7; margin-bottom: 2rem;">
+              "I'm Abishek R — a creative editor, visual designer and musician who enjoys transforming simple ideas into
+              visuals that people remember. Whether cutting high-energy videos in CapCut, composing synths, or crafting
+              minimal brand identities, I focus on speed, quality, and attention to detail."
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+              <span class="hero-badge" style="background:#E5E4E0; color:#000; border-color:#DDD;">BASED IN INDIA</span>
+              <span class="hero-badge" style="background:#E5E4E0; color:#000; border-color:#DDD;">CREATIVE EDITOR</span>
+              <span class="hero-badge" style="background:#000; color:#FFF;">CAPCUT USER</span>
+              <span class="hero-badge" style="background:var(--accent-lime); color:#000;">AVAILABLE FOR PROJECTS</span>
+            </div>
+          </div>
+          <div class="behind-edit-photo-wrapper">
+            <div class="portrait-card-frame">
+              <img src="assets/images/Jas 7.webp" alt="Abishek R Portrait" class="portrait-photo-img">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ====================================================================
+         6. JAN VISUAL PRODUCTION CONTACT SECTION (#contact)
+         ==================================================================== -->
+    <section class="contact-section" id="contact">
+      <!-- Background Ambient Motion & Watermark -->
+      <div class="contact-bg-watermark" aria-hidden="true">JVP</div>
+      <div class="contact-bg-glow"></div>
+
+      <div class="contact-container">
+        <!-- EDITORIAL INTRO HEADER -->
+        <div class="contact-editorial-header">
+          <div class="section-label">06 — CONTACT THE CREATIVE STUDIO</div>
+          <h2 class="contact-main-heading">LET'S TALK.</h2>
+          <div class="contact-sub-statement">
+            <span class="text-lime">YOUR IDEA.</span> OUR VISUALS.
+          </div>
+          <p class="contact-intro-lead">
+            For projects, collaborations, creative work and visual production.
+          </p>
+        </div>
+
+        <!-- SECTION CONCEPT BAR -->
+        <div class="contact-concept-bar">
+          <div class="concept-badge">SECTION CONCEPT</div>
+          <h3 class="concept-title">LET'S CREATE SOMETHING.</h3>
+          <p class="concept-subtitle">HAVE AN IDEA? LET'S TURN IT INTO VISUALS.</p>
+        </div>
+
+        <!-- THREE INTERACTIVE VISUAL CONTACT CARDS -->
+        <div class="contact-cards-grid">
+          <!-- CARD 01: EMAIL -->
+          <a href="mailto:jasvisualproduction@gmail.com" class="contact-visual-card card-email" data-cursor="EMAIL US">
+            <div class="card-glow-overlay"></div>
+            <div class="card-content">
+              <div class="card-header">
+                <span class="card-num">01 / EMAIL</span>
+                <span class="card-microcopy">FOR PROJECTS & BUSINESS ENQUIRIES</span>
+              </div>
+
+              <h3 class="card-title">EMAIL</h3>
+              <div class="card-address">jasvisualproduction@gmail.com</div>
+
+              <div class="card-action-bar">
+                <span class="magnetic-action-text">SEND MESSAGE <span class="arrow">↗</span></span>
+              </div>
+            </div>
+
+            <div class="card-graphic-wrapper">
+              <img src="assets/images/contact_email.png" alt="Email Studio Graphic" class="contact-3d-graphic">
+            </div>
+          </a>
+
+          <!-- CARD 02: INSTAGRAM -->
+          <a href="https://instagram.com/jas_abishek" target="_blank" rel="noopener noreferrer"
+            class="contact-visual-card card-instagram" data-cursor="INSTAGRAM">
+            <div class="card-glow-overlay"></div>
+            <div class="card-content">
+              <div class="card-header">
+                <span class="card-num">02 / INSTAGRAM</span>
+                <span class="card-microcopy">FOLLOW OUR CREATIVE WORK</span>
+              </div>
+
+              <h3 class="card-title">INSTAGRAM</h3>
+              <div class="card-address">@jas_abishek</div>
+
+              <div class="card-action-bar">
+                <span class="magnetic-action-text">VISIT INSTAGRAM <span class="arrow">↗</span></span>
+              </div>
+            </div>
+
+            <div class="card-graphic-wrapper">
+              <img src="assets/images/contact_instagram.png" alt="Instagram Studio Graphic" class="contact-3d-graphic">
+            </div>
+          </a>
+
+          <!-- CARD 03: WHATSAPP -->
+          <a href="https://wa.me/919500741878" target="_blank" rel="noopener noreferrer"
+            class="contact-visual-card card-whatsapp" data-cursor="WHATSAPP">
+            <div class="card-glow-overlay"></div>
+            <div class="card-content">
+              <div class="card-header">
+                <span class="card-num">03 / WHATSAPP</span>
+                <span class="card-microcopy">QUICK PROJECT DISCUSSIONS</span>
+              </div>
+
+              <h3 class="card-title">WHATSAPP</h3>
+              <div class="card-address">+91 9500741878</div>
+
+              <div class="card-action-bar">
+                <span class="magnetic-action-text">START A CHAT <span class="arrow">↗</span></span>
+              </div>
+            </div>
+
+            <div class="card-graphic-wrapper">
+              <img src="assets/images/contact_whatsapp.png" alt="WhatsApp Studio Graphic" class="contact-3d-graphic">
+            </div>
+          </a>
+        </div>
+
+        <!-- FINAL MASSIVE CTA & DIRECT INQUIRY FORM -->
+        <div class="contact-bottom-wrapper">
+          <div class="contact-cta-hero-box">
+            <span class="cta-meta-tag">JAN VISUAL PRODUCTION HOUSE</span>
+            <h2 class="cta-huge-title">HAVE A PROJECT IN MIND?<br><span class="text-lime">LET'S MAKE IT VISUAL.</span>
+            </h2>
+            <a href="mailto:jasvisualproduction@gmail.com" class="studio-cta-btn">START A PROJECT →</a>
+          </div>
+
+          <div class="contact-form-container">
+            <form class="contact-form" id="contactForm">
+              <div class="form-title-group">
+                <h3 style="font-size: 1.5rem; font-family: var(--font-display);">QUICK STUDIO INQUIRY</h3>
+                <p style="color: var(--text-dark-secondary); font-size: 0.95rem;">Send project details directly to
+                  Abishek R & JAN Visual Production.</p>
+              </div>
+              <div class="form-group">
+                <label for="name">YOUR NAME</label>
+                <input type="text" id="name" class="form-input" placeholder="e.g. Alex Rivera" required>
+              </div>
+              <div class="form-group">
+                <label for="email">YOUR EMAIL</label>
+                <input type="email" id="email" class="form-input" placeholder="alex@company.com" required>
+              </div>
+              <div class="form-group">
+                <label for="service">SERVICE NEEDED</label>
+                <select id="service" class="form-input">
+                  <option value="jan">JAN Visual Production House Project</option>
+                  <option value="editing">Video Editing / CapCut Reel & Photo Retouch</option>
+                  <option value="music">Music Collaboration / Performance</option>
+                  <option value="poster">Poster & Graphic Design</option>
+                  <option value="logo">Logo & Brand Identity</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">PROJECT DETAILS</label>
+                <textarea id="message" rows="4" class="form-textarea"
+                  placeholder="Tell us about your project timeline and goals..." required></textarea>
+              </div>
+              <button type="submit" class="form-submit-btn">SEND MESSAGE →</button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-top">
+      <div>
+        <div class="section-label">ALWAYS CREATING</div>
+        <h2 class="footer-huge-statement">ALWAYS CREATING. ALWAYS EVOLVING.</h2>
+      </div>
+      <div>
+        <a href="#hero" class="hero-scroll-indicator" style="text-decoration:none;">BACK TO TOP ↑</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 ABISHEK R & JAN VISUAL PRODUCTION. ALL RIGHTS RESERVED.</div>
+      <div>DESIGNED & PRODUCED FOR HIGH RETENTION VISUALS & SOUND.</div>
+    </div>
+  </footer>
+
+  <!-- CASE STUDY MODAL -->
+  <div class="modal-overlay" id="caseStudyModal">
+    <div class="modal-content-box">
+      <button class="modal-close-btn">&times;</button>
+      <div id="modalBodyContent">
+        <!-- Dynamic Case Study Content Populated by JS -->
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+
+</html>
